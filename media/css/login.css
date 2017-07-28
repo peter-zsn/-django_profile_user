@@ -1,0 +1,126 @@
+body{
+    position: relative;
+}
+body #form{
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    margin-left: -150px;
+}
+.admin_login {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    margin: 10% auto 0 auto;
+    padding: 40px;
+    box-shadow: 0 -15px 30px #0d957a;
+    border-radius: 5px;
+}
+.admin_login dt {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1px #0e947a;
+    margin-bottom: 15px;
+}
+
+
+.admin_login dt strong {
+    display: block;
+}
+
+
+.admin_login dt em {
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.admin_login dd {
+    margin: 5px 0;
+    height: 42px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.admin_login dd .login_txtbx {
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    padding: 8px 5%;
+    width: 90%;
+    text-indent: 6em;
+    border: none;
+    background: #5cbdaa;
+    color: #303124;
+}
+
+.admin_login dd .login_txtbx::-webkit-input-placeholder {
+    color: #f4f4f4;
+    line-height: inherit;
+}
+
+.admin_login dd .login_txtbx:-moz-placeholder {
+    color: #f4f4f4; line-height: inherit;
+}
+
+.admin_login dd .login_txtbx::-moz-placeholder {
+    color: #f4f4f4; line-height: inherit;
+}
+
+.admin_login dd .login_txtbx:focus {
+    background: #55b7a4;
+}
+
+.admin_login dd .before {
+    font-family: 'adminthemesregular';
+    position: absolute; top: 0;
+    left: 10px;
+    /*height: 25px;*/
+    text-align: center;
+    /*line-height: 42px;*/
+    /*font-size: 20px;*/
+    /*color: #0c9076;*/
+}
+
+.admin_login dd .submit_btn {
+    width: 90%;
+    height: 42px;
+    border: none;
+    font-size: 16px;
+    background: #048f74;
+    color: #f8f8f8;
+}
+
+.admin_login dd .back {
+    width: 90%;
+    height: 42px;
+    border: none;
+    font-size: 16px;
+    background: #048f74;
+    color: #f8f8f8;
+}
+
+.admin_login dd .submit_btn:hover {
+    background: #0c9076;
+    color: #f4f4f4;
+}
+
+.admin_login dd p {
+    color: #53c6b0;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.admin_login .error_message {
+    text-align: center;
+    color: #ff0000;
+    line-height: 2;
+}
+
+.error_message {
+    display: none;
+}

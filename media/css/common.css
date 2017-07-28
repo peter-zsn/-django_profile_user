@@ -1,0 +1,120 @@
+body{
+    background-color: #494A5F;
+    color: #D5D5E2;
+}
+
+.container{
+    display: block;
+    font-size: 1em;
+    font-weight: 100;
+    width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    margin-left: -15px;
+    margin-right: -10px;
+}
+
+h1.animateTitle1{
+    font-size: 10vh;
+    letter-spacing: 2vh;
+    color: white;
+    padding: 1em;
+}
+
+.well{
+    min-height: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: gray;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+.well h4{
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-danger{
+    color: white;
+}
+
+.long-shadow, .medium-shadow {
+    border: none;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+}
+.long-shadow {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    text-shadow: 3px 3px 0 #4C6A92, 4px 4px 0 #4C6A92, 5px 5px 0 #4C6A92, 6px 6px 0 #4C6A92, 7px 7px 0 #4C6A92, 8px 8px 0 #4C6A92, 9px 9px 0 #4C6A92, 10px 10px 0 #4C6A92, 11px 11px 0 #4C6A92, 12px 12px 0 #4C6A92, 13px 13px 0 #4C6A92, 14px 14px 0 #4C6A92, 15px 15px 0 #4C6A92, 16px 16px 0 #4C6A92, 17px 17px 0 #4C6A92, 18px 18px 0 #4C6A92, 19px 19px 0 #4C6A92, 20px 20px 0 #4C6A92;
+}
+
+body .blocks {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .blocks .block {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  -webkit-transform: perspective(600px) rotateY(-30deg);
+          transform: perspective(600px) rotateY(-30deg);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+body .blocks .block img {
+  width: auto;
+  max-width: 100%;
+}
+body .blocks .block .overlay {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+body .blocks .block .overlay img {
+  width: auto;
+  max-width: 50%;
+}
+body .blocks .block.hover, body .blocks .block:hover {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  cursor: pointer;
+}
+body .blocks .block.hover .overlay, body .blocks .block:hover .overlay {
+  opacity: 1;
+}

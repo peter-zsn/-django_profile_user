@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}_Are You Freestyle</title>
+    <link rel="stylesheet" href="/media/css/common.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/animate.css" type="text/css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="long-shadow"><span class="animateTitle1">ARE YOU FREESTYLE</span></h1>
+            <h2>Your Your</h2>
+            <div class="well"><h4 class="demo1 text-danger">蚂  蚁  蚂  蚁  蚂  蚁。  像  我  像  他  像  你。</h4></div>
+            <h2>Wake Up</h2>
+            <div class="well"><h4 class="demo2 text-danger">到  底  输  给  道  理。  像  雾  像  风  像  雨。</h4></div>
+            <h2>Checkout</h2>
+            <div class="well"><h4 class="demo3 text-danger">那  就  H$O   Money。   我  才  不  会  想  你。</h4></div>
+            <h2>Diss</h2>
+            <div class="well"><h4 class="demo4 text-danger">人  生  总  苦  短。   又  怎  么  能  白  费。</h4></div>
+        </div>
+    </div>
+    <div class="blocks">
+      <div class="block">
+        <div class="overlay">
+          <p class="login">登陆</p>
+        </div>
+        <img src="/media/image/2.jpg/" alt="Image" />
+      </div>
+        <div class="block">
+        <div class="overlay">
+          <p class="reg">注册</p>
+        </div>
+        <img src="/media/image/3.jpg/" alt="Image" />
+      </div>
+    </div>
+
+    {% block body%}{% endblock %}
+    <script src="/media/js/jquery-3.2.1.min.js"></script>
+    <script src="/media/js/animatext.min.js"></script>
+    <script src="/media/js/common.js"></script>
+    {% block js %}{% endblock %}
+</body>
+</html>

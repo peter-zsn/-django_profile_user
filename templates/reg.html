@@ -1,0 +1,56 @@
+{% block css %}
+<link rel="stylesheet" href="/media/css/login.css">
+<style>body{background-color: #0d957a;}</style>
+{% endblock %}
+
+{% block body %}
+<form role="form" id="form" action="/reg/" method="post"  >
+     <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    <dl class="admin_login">
+        <dt>
+            <strong>中国有嘻哈官方注册</strong>
+            <em>China hip-hop official regging</em>
+        </dt>
+        <dd class="user_icon">
+            <span class="before">name</span>
+            <input type="text" placeholder="账号" class="login_txtbx"  name="username"/>
+        </dd>
+        <dd class="pwd_icon">
+            <span class="before">pwd</span>
+            <input type="text" placeholder="密码" class="login_txtbx"  name="password"/>
+        </dd>
+
+        <dd class="pwd_icon">
+            <span class="before">sex</span>
+            <input type="text" placeholder="性别" class="login_txtbx"  name="sex"/>
+        </dd>
+
+
+        <dd class="pwd_icon">
+            <span class="before">home</span>
+            <input type="text" placeholder="住址" class="login_txtbx"  name="home"/>
+        </dd>
+
+        <dd class="pwd_icon">
+            <span class="before">company</span>
+            <input type="text" placeholder="公司" class="login_txtbx"  name="company"/>
+        </dd>
+
+        <dd >
+            <input type="button" value="注册" class="submit_btn" id="submit_btn" />
+        </dd>
+        <dd>
+            <input type="button" value="返回" class="back" id="back" />
+        </dd>
+
+
+    </dl>
+</form>
+{% endblock %}
+
+{% block js %}
+    <script src="/media/js/jquery-3.2.1.min.js"></script>
+    <script src="/media/js/jquery.form.js"></script>
+    <script src="/media/js/Particleground.js"></script>
+    <script src="/media/js/reg.js"></script>
+{% endblock %}

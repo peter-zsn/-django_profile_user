@@ -1,0 +1,39 @@
+{% block css %}
+<link rel="stylesheet" href="/media/css/login.css">
+<style>body{background-color: #0d957a;}</style>
+{% endblock %}
+{% block body %}
+<form role="form" id="form" action="/login/" method="post"  >
+     <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+     <dl class="admin_login">
+        <dt>
+            <strong>中国有嘻哈官方登陆</strong>
+            <em>China hip-hop official landing</em>
+        </dt>
+        <dd class="user_icon">
+            <span class="before">u</span>
+            <input type="text" placeholder="账号" class="login_txtbx"  name="username" id="username"/>
+        </dd>
+        <dd class="pwd_icon">
+            <span class="before">p</span>
+            <input type="password" placeholder="密码" class="login_txtbx"  name="password" id="password"/>
+        </dd>
+
+        <dd >
+            <input type="button" value="立即登陆" class="submit_btn" id="submit_btn" />
+        </dd>
+        <dd>
+            <input type="button" value="返回" class="back" id="back" />
+        </dd>
+
+
+    </dl>
+</form>
+{% endblock %}
+
+{% block js %}
+    <script src="/media/js/jquery-3.2.1.min.js"></script>
+    <script src="/media/js/jquery.form.js"></script>
+    <script src="/media/js/Particleground.js"></script>
+    <script src="/media/js/login.js"></script>
+{% endblock %}
